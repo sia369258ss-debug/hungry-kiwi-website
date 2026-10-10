@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eat-in | Hungry Kiwi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+
+    <!-- 与首页相同的导航 -->
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo">Hungry Kiwi</div>
+
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="login.html">Log In</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 新增：堂食表单 -->
+    <main class="content">
+        <h1>Eat-in</h1>
+        <p>This is a demonstration form.</p>
+        <p>No reservation or payment will be submitted.</p>
+
+        <form class="demo-form">
+
+            <!-- 新增：选择堂食时间 -->
+            <label for="dining-time">Dining time</label>
+            <input type="time" id="dining-time">
+
+            <!-- 新增：选择付款方式 -->
+            <label for="payment">Payment method</label>
+            <select id="payment">
+                <option value="">Choose a payment method</option>
+                <option>Cash at the restaurant</option>
+                <option>Card — demonstration only</option>
+            </select>
+
+        </form>
+
+        <p>This form cannot be submitted.</p>
+        <a href="index.html">Back to Home</a>
+    </main>
+
+    <footer>
+        <p>Hungry Kiwi — Website prototype</p>
+    </footer>
+
+</body>
+</html>

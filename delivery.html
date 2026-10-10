@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery | Hungry Kiwi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page">
+
+    <!-- 与首页相同的导航 -->
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo">Hungry Kiwi</div>
+
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="login.html">Log In</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 新增：外送表单 -->
+    <main class="content">
+        <h1>Delivery</h1>
+        <p>This is a demonstration. Please use fictional details.</p>
+        <p>No order or payment will be submitted.</p>
+
+        <!-- 新增：form 将输入内容组织在一起 -->
+        <form class="demo-form">
+
+            <!-- 新增：label 说明用途，input 提供输入框 -->
+            <label for="address">Delivery address</label>
+            <input type="text" id="address" autocomplete="off">
+
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" autocomplete="off">
+
+            <label for="delivery-time">Delivery time</label>
+            <input type="time" id="delivery-time">
+
+            <!-- 新增：select 提供下拉选项 -->
+            <label for="payment">Payment method</label>
+            <select id="payment">
+                <option value="">Choose a payment method</option>
+                <option>Cash on delivery</option>
+                <option>Card — demonstration only</option>
+            </select>
+
+        </form>
+
+        <p>This form cannot be submitted.</p>
+        <a href="index.html">Back to Home</a>
+    </main>
+
+    <footer>
+        <p>Hungry Kiwi — Website prototype</p>
+    </footer>
+
+</body>
+</html>
