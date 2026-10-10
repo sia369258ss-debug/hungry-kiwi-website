@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Hungry Kiwi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- 新增：注册页面背景 -->
+
+<body class="signup-page">
+
+    <!-- 保留：与首页相同的导航 -->
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo">Hungry Kiwi</div>
+
+            <!-- 电脑导航 -->
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="login.html">Log In</a>
+            </div>
+
+            <!-- 新增：手机折叠菜单 -->
+            <details class="mobile-menu">
+                <summary>☰ Menu</summary>
+
+                <div class="mobile-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="signup.html">Sign Up</a>
+                    <a href="login.html">Log In</a>
+                </div>
+            </details>
+        </nav>
+    </header>
+
+    <!-- 新增：注册演示表单 -->
+    <main class="page-content">
+        <h1>Sign Up</h1>
+        <p>
+            Use fictional details. This demonstration
+            does not create an account or save information.
+        </p>
+
+        <form class="demo-form">
+            <label for="signup-name">Your name</label>
+            <input type="text" id="signup-name">
+
+            <label for="signup-email">Email address</label>
+            <input type="email" id="signup-email">
+
+            <label for="signup-password">Demo password</label>
+            <input type="password" id="signup-password">
+        </form>
+
+        <p>This form is for display only and cannot be submitted.</p>
+        <p>
+            Already have an account?
+            <a href="login.html">View the Log In page</a>
+        </p>
+    </main>
+
+    <footer>
+        <p>Hungry Kiwi — Website prototype</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In | Hungry Kiwi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- 新增：登录页面背景 -->
+
+<body class="login-page">
+
+    <!-- 保留：与首页相同的导航 -->
+    <header>
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo">Hungry Kiwi</div>
+
+            <!-- 电脑导航 -->
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="signup.html">Sign Up</a>
+                <a href="login.html">Log In</a>
+            </div>
+
+            <!-- 新增：手机折叠菜单 -->
+            <details class="mobile-menu">
+                <summary>☰ Menu</summary>
+
+                <div class="mobile-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="signup.html">Sign Up</a>
+                    <a href="login.html">Log In</a>
+                </div>
+            </details>
+        </nav>
+    </header>
+
+    <!-- 新增：登录演示表单 -->
+    <main class="page-content">
+        <h1>Log In</h1>
+        <p>
+            Use fictional details. This demonstration
+            does not log you in or save information.
+        </p>
+
+        <form class="demo-form">
+            <label for="login-email">Email address</label>
+            <input type="email" id="login-email">
+
+            <label for="login-password">Demo password</label>
+            <input type="password" id="login-password">
+        </form>
+
+        <p>This form is for display only and cannot be submitted.</p>
+        <p>
+            New to Hungry Kiwi?
+            <a href="signup.html">View the Sign Up page</a>
+        </p>
+    </main>
+
+    <footer>
+        <p>Hungry Kiwi — Website prototype</p>
+    </footer>
+
+</body>
+
+</html>

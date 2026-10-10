@@ -1,0 +1,294 @@
+/* 原有 body：保留字体和取消默认外边距 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e8dcc8;
+}
+
+/* 原有导航：修改颜色，新增换行和两端排列 */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #65533c;
+    padding: 20px;
+}
+
+/* 原有 logo：修改颜色和字号 */
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* 修改：不用 absolute 定位，改成 Flexbox */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 原有链接样式：调整颜色、字号和间距 */
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* 原有 hover：保留鼠标悬停效果 */
+.menu a:hover {
+    background-color: #e8dcc8;
+    color: #30271d;
+}
+
+/* 新增：首页背景图片 */
+.home-page {
+    background-image: url("images/background.home.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* 新增：首页米色半透明面板 */
+.content {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: rgba(248, 236, 211, 0.95);
+    color: #30271d;
+    text-align: center;
+}
+
+/* 新增：菜品排列，放不下时换到下一行 */
+.food-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 新增：每张菜品卡片 */
+.food {
+    width: 230px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fffaf0;
+}
+
+/* 新增：菜品图片随卡片宽度显示 */
+.food img {
+    width: 100%;
+    height: auto;
+}
+
+/* 新增：设置原有页脚的颜色和间距 */
+footer {
+    padding: 15px;
+    background-color: #65533c;
+    color: white;
+    text-align: center;
+}
+
+/* 新增：外送和堂食入口的排列 */
+.dining-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+/* 新增：把链接显示为按钮 */
+.dining-options a {
+    background-color: #65533c;
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 5px;
+}
+
+/* 新增：鼠标悬停效果 */
+.dining-options a:hover {
+    background-color: #483a29;
+}
+
+/* 新增：两个表单共用的宽度和排列 */
+.demo-form {
+    max-width: 450px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* 新增：标签单独占一行 */
+.demo-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* 新增：输入框和下拉框的样式 */
+.demo-form input,
+.demo-form select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #65533c;
+    background-color: #fffaf0;
+}
+
+/* 新增：四个页面共同的背景设置 */
+.about-page,
+.contact-page,
+.signup-page,
+.login-page {
+    background-size: cover;
+    background-position: center;
+}
+
+/* 新增：各页面对应的背景图片 */
+.about-page {
+    background-image: url("images/about.background.jpg");
+}
+
+.contact-page {
+    background-image: url("images/contact.background.jpg");
+}
+
+.signup-page {
+    background-image: url("images/signup.background.jpg");
+}
+
+.login-page {
+    background-image: url("images/login.background.jpg");
+}
+
+/* 新增：四个页面的米色内容面板 */
+.page-content {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: rgba(248, 236, 211, 0.95);
+    color: #30271d;
+    text-align: center;
+}
+
+/* 新增：正文行距 */
+.page-content p {
+    line-height: 1.6;
+}
+
+/* 新增：内容面板里的链接颜色 */
+.page-content a {
+    color: #39573d;
+}
+
+/* 新增：表单宽度和位置 */
+.demo-form {
+    max-width: 450px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* 新增：输入框上方的说明文字 */
+.demo-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* 新增：输入框和下拉框 */
+.demo-form input,
+.demo-form select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid #65533c;
+    background-color: #fffaf0;
+}
+
+/* 新增：页面至少与浏览器窗口一样高 */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 新增：让页头和页脚保持正常高度 */
+header,
+footer {
+    flex-shrink: 0;
+}
+
+/* 新增：把页脚推到页面底部 */
+footer {
+    margin-top: auto;
+}
+
+/* 新增：屏幕宽度不超过 600px 时使用 */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .menu a {
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .content,
+    .page-content {
+        margin: 15px 10px;
+        padding: 15px;
+    }
+
+    .food {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* 新增：电脑上隐藏手机菜单 */
+.mobile-menu {
+    display: none;
+}
+
+/* 新增：手机宽度下切换导航 */
+@media (max-width: 600px) {
+    /* 隐藏原来的电脑导航 */
+    .menu {
+        display: none;
+    }
+
+    /* 显示手机菜单 */
+    .mobile-menu {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        color: white;
+    }
+
+    /* 可以点击的菜单标题 */
+    .mobile-menu summary {
+        cursor: pointer;
+        padding: 10px;
+        list-style: none;
+    }
+
+    /* 隐藏浏览器默认的展开标记 */
+    .mobile-menu summary::-webkit-details-marker {
+        display: none;
+    }
+
+    /* 展开后，每个链接单独一行 */
+    .mobile-links a {
+        display: block;
+        padding: 12px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .mobile-links a:hover {
+        background-color: #483a29;
+    }
+}
